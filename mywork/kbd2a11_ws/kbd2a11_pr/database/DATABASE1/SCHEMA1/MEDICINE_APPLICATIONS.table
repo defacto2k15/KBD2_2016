@@ -4,6 +4,262 @@
     <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
   </ID>
   <name>MEDICINE_APPLICATIONS</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">4154e96f-cc75-4677-a1c9-a5a3d01b62a3</identifier>
+      </ID>
+      <name>WORKER_ID</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b895092c-2ff4-4171-b995-b5d6421afd4a</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Klucz lekarza podającego lek</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">ae756e06-6d18-4480-b7d8-02e1f026305c</identifier>
+      </ID>
+      <name>PATIENT_ID</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">869310cf-2bcc-4808-9f8d-c5aecbe618cd</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Klucz pacjenta który otrzymał lek</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8c7db646-aca9-4ae0-a24e-4d6203c4b0c3</identifier>
+      </ID>
+      <name>MEDICINE_ID</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">342ee4c4-484a-47e3-8261-2c96f570272f</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Kod leku który był podany</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">ba41662b-d7df-4de6-b7a9-eb05d3f4a14c</identifier>
+      </ID>
+      <name>APPLICATION_DATE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2801cc2e-3504-4695-a31e-edce28d7e86f</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Data podania leku</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">1cf4c900-48bc-49a9-ba06-ef6413bd2278</identifier>
+      </ID>
+      <name>DOSE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">91c7a4fb-5fc1-4393-a939-76ec78b9ceaf</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">5</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Ilość podanego leku w mg.</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">1689c638-1d15-457e-a799-bc870ca6d803</identifier>
+      </ID>
+      <name>APPLICATIONS_MEDICINE_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>MEDICINE_ID</name>
+          <identifier class="java.lang.String">8c7db646-aca9-4ae0-a24e-4d6203c4b0c3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINE_APPLICATIONS</name>
+            <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>MEDICINES_PK</name>
+        <identifier class="java.lang.String">a8356b0d-3cb5-4748-8f90-eaf9e526b68b</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>MEDICINES</name>
+          <identifier class="java.lang.String">16895dcb-772d-4d31-bde9-db54d09fd1ba</identifier>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e30b4af5-33dc-488a-8e14-790c350c35b9</identifier>
+      </ID>
+      <name>APPLICATIONS_PATIENT_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>PATIENT_ID</name>
+          <identifier class="java.lang.String">ae756e06-6d18-4480-b7d8-02e1f026305c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINE_APPLICATIONS</name>
+            <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>PATIENTS_PK</name>
+        <identifier class="java.lang.String">5b965a69-a2d9-4ecb-8fde-1408c52a8116</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>PATIENTS</name>
+          <identifier class="java.lang.String">554f145c-c66d-433d-8384-6a702e5b3819</identifier>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2e9e102d-8275-4c09-8412-a375e0521529</identifier>
+      </ID>
+      <name>APPLICATIONS_WORKER_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>WORKER_ID</name>
+          <identifier class="java.lang.String">4154e96f-cc75-4677-a1c9-a5a3d01b62a3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINE_APPLICATIONS</name>
+            <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>WORKERS_PK</name>
+        <identifier class="java.lang.String">cb5850e8-6257-46b1-958e-2392d0b7e323</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>WORKERS</name>
+          <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+  </constraints>
   <properties>
     <entry>
       <key>TableType</key>

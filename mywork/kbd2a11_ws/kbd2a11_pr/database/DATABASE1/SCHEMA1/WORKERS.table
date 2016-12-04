@@ -4,6 +4,404 @@
     <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
   </ID>
   <name>WORKERS</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">20d88412-7578-46e2-9bb9-eda43f6004d1</identifier>
+      </ID>
+      <name>WORKER_ID</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2c62e6d9-9e09-4b5b-a2bd-96bab9cc423b</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">57293e00-797d-4dcf-9cbf-ec71dec22d74</identifier>
+      </ID>
+      <name>FIRST_NAME</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ad59f77e-63aa-4f54-897c-6c99a2d5ad62</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">fefe248d-ecf7-42f0-b099-ebc651b03c5f</identifier>
+      </ID>
+      <name>MIDDLE_NAME</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">69f60cdf-1cff-42f2-a465-e2baaed086a2</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Drugie imie, nie obowiązkowe</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">249f23e5-12f8-4d9a-864f-f909537bc921</identifier>
+      </ID>
+      <name>LAST_NAME</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">18d620c4-08c1-43d9-93f5-1a53775718a0</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e7b423c8-4c73-445a-a150-88b048d1895d</identifier>
+      </ID>
+      <name>BIRTH_DATE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">a2e0f0d4-120b-42d4-91b3-992255757912</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">061201b1-05cd-4c6f-81bc-4ea6f4e2eae4</identifier>
+      </ID>
+      <name>SALARY</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ad0e330c-0e98-46c7-8de0-ffe35d9b451c</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">7</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Płaca miesięczna w dolarach.</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">f45b0ac7-5483-448b-9c45-04dec5205f16</identifier>
+      </ID>
+      <name>WORK_POSITION</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">52c11721-67da-4c7a-b08a-7cdf882f0573</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">15</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Pozycja pracy w szpitalnej hierarchii zawodowej.</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c09c433e-ce82-418d-835f-401ab102c788</identifier>
+      </ID>
+      <name>SUPERIOR</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">cf0da0de-01db-4995-9b16-3a01f1acc2ed</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">Przełożony danego lekarza w hierarchii zawodowej.</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6f326be3-d1fc-43b9-8f81-052b3296b928</identifier>
+      </ID>
+      <name>HOSPITAL_BOSS_SUPERIOR_CHK</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">60bc2799-d863-4530-aa20-16a5043aaa91</identifier>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">68ea87d0-7718-496b-b187-f15b030a22af</identifier>
+            </ID>
+            <comparator>44</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">c106f343-91df-43df-a651-56bd4e101e68</identifier>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>SUPERIOR</name>
+                <identifier class="java.lang.String">c09c433e-ce82-418d-835f-401ab102c788</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>WORKERS</name>
+                  <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
+                  <schemaName>SCHEMA1</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>SCHEMA1</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+          </argument>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">8937ff77-34b8-4ae2-a87c-0d592d6416a8</identifier>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">92e7cda5-29f0-4aad-93b0-0251b35da085</identifier>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>WORK_POSITION</name>
+                <identifier class="java.lang.String">f45b0ac7-5483-448b-9c45-04dec5205f16</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>WORKERS</name>
+                  <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
+                  <schemaName>SCHEMA1</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>SCHEMA1</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">374b2c41-5e2c-4e24-874e-565d08f0308a</identifier>
+              </ID>
+              <SQLText>&apos;HospitalBoss&apos;</SQLText>
+            </rightExpression>
+          </argument>
+        </arguments>
+        <operator>373</operator>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">df7319fc-0315-4b30-966a-2953bfeebc3c</identifier>
+      </ID>
+      <name>WORK_POSITION_VALUES_CHK</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">67e225eb-8cb9-48fe-8fef-073c50bae287</identifier>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.SetOperation">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">53d01a62-f5ae-4e0a-865d-064dbc543504</identifier>
+            </ID>
+            <arguments>
+              <argument class="oracle.javatools.db.sql.ColumnUsage">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">20f7eb9e-5821-4aac-8e67-1ba58b3968df</identifier>
+                </ID>
+                <objectID class="oracle.javatools.db.IdentifierBasedID">
+                  <name>WORK_POSITION</name>
+                  <identifier class="java.lang.String">f45b0ac7-5483-448b-9c45-04dec5205f16</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>WORKERS</name>
+                    <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
+                    <schemaName>SCHEMA1</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>SCHEMA1</schemaName>
+                  <type>COLUMN</type>
+                </objectID>
+                <outerJoin>false</outerJoin>
+                <qualified>false</qualified>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">02c4b5b0-08e5-4535-9d11-bbf349e6058e</identifier>
+                </ID>
+                <SQLText>&apos;HospitalBoss&apos;</SQLText>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">1daa3119-d626-4a77-bf3e-97b2f8618a92</identifier>
+                </ID>
+                <SQLText>&apos;MedicalDirector&apos;</SQLText>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">fb987789-c2a7-4b47-8cff-580b7cbd9978</identifier>
+                </ID>
+                <SQLText>&apos;TeamBoss&apos;</SQLText>
+              </argument>
+              <argument class="oracle.javatools.db.sql.SimpleSQLFragment">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">e8418cdf-1e69-4514-8e8b-571126715eaf</identifier>
+                </ID>
+                <SQLText>&apos;Doctor&apos;</SQLText>
+              </argument>
+            </arguments>
+            <operator>705</operator>
+          </argument>
+        </arguments>
+        <operator>372</operator>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">16970faf-ddb7-4ce1-b5a0-c2d6706acbe9</identifier>
+      </ID>
+      <name>WORKERS_SUPERIOR</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>SUPERIOR</name>
+          <identifier class="java.lang.String">c09c433e-ce82-418d-835f-401ab102c788</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>WORKERS</name>
+            <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>WORKERS_PK</name>
+        <identifier class="java.lang.String">cb5850e8-6257-46b1-958e-2392d0b7e323</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>WORKERS</name>
+          <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
+          <schemaName>SCHEMA1</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCHEMA1</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">cb5850e8-6257-46b1-958e-2392d0b7e323</identifier>
+      </ID>
+      <name>WORKERS_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>WORKER_ID</name>
+          <identifier class="java.lang.String">20d88412-7578-46e2-9bb9-eda43f6004d1</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>WORKERS</name>
+            <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+  </constraints>
   <properties>
     <entry>
       <key>TableType</key>

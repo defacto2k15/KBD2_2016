@@ -237,7 +237,6 @@
                   <schemaName>SCHEMA1</schemaName>
                   <type>TABLE</type>
                 </parent>
-                <schemaName>SCHEMA1</schemaName>
                 <type>COLUMN</type>
               </objectID>
               <outerJoin>false</outerJoin>
@@ -262,7 +261,6 @@
                   <schemaName>SCHEMA1</schemaName>
                   <type>TABLE</type>
                 </parent>
-                <schemaName>SCHEMA1</schemaName>
                 <type>COLUMN</type>
               </objectID>
               <outerJoin>false</outerJoin>
@@ -308,7 +306,6 @@
                     <schemaName>SCHEMA1</schemaName>
                     <type>TABLE</type>
                   </parent>
-                  <schemaName>SCHEMA1</schemaName>
                   <type>COLUMN</type>
                 </objectID>
                 <outerJoin>false</outerJoin>
@@ -361,7 +358,6 @@
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>SCHEMA1</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -376,7 +372,6 @@
           <schemaName>SCHEMA1</schemaName>
           <type>TABLE</type>
         </parent>
-        <schemaName>SCHEMA1</schemaName>
         <type>CONSTRAINT</type>
       </referenceID>
     </constraint>
@@ -395,13 +390,50 @@
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>SCHEMA1</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
       <enabled>true</enabled>
     </constraint>
   </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">722028d5-c07d-4c49-9bb8-0a5630b0b2bb</identifier>
+      </ID>
+      <name>WORKERS_SUPERIOR_IDX</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">8d0a5225-cc25-457b-b9b6-97b0ba3db88e</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">d76f0884-35e3-45a7-800a-b036f7edad42</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>SUPERIOR</name>
+              <identifier class="java.lang.String">c09c433e-ce82-418d-835f-401ab102c788</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>WORKERS</name>
+                <identifier class="java.lang.String">a0ef3634-c69b-4c3b-8714-824aed0ad005</identifier>
+                <schemaName>SCHEMA1</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+    </indexe>
+  </indexes>
   <properties>
     <entry>
       <key>TableType</key>

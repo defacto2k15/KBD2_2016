@@ -7,6 +7,28 @@
   <columns>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">93204de2-dc06-46a2-b9ae-9f86ed34104d</identifier>
+      </ID>
+      <name>RESTRICTION_ID</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">9ed9030c-86e1-4eae-ab94-1c9cd07417bd</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
         <identifier class="java.lang.String">20d69c75-42d3-4204-ad9e-84c7afe64854</identifier>
       </ID>
       <name>MEDICINE_ID</name>
@@ -252,7 +274,6 @@
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>SCHEMA1</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -271,7 +292,66 @@
         <type>CONSTRAINT</type>
       </referenceID>
     </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">378ec16b-0152-4272-a386-2f362e404875</identifier>
+      </ID>
+      <name>RESTRICTIONS_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>RESTRICTION_ID</name>
+          <identifier class="java.lang.String">93204de2-dc06-46a2-b9ae-9f86ed34104d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>RESTRICTIONS</name>
+            <identifier class="java.lang.String">0813f4e9-8593-46c4-b8a2-e451380b685c</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
   </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">80ff4909-bafc-4d08-8116-315e1dfcc7b6</identifier>
+      </ID>
+      <name>RESTRICTIONS_MEDICINE_IDX</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">086bdff3-2b8a-425a-b9ff-14d3e41973f7</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">fc29e463-1706-47aa-b12c-cf71771f6b46</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>MEDICINE_ID</name>
+              <identifier class="java.lang.String">20d69c75-42d3-4204-ad9e-84c7afe64854</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>RESTRICTIONS</name>
+                <identifier class="java.lang.String">0813f4e9-8593-46c4-b8a2-e451380b685c</identifier>
+                <schemaName>SCHEMA1</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+    </indexe>
+  </indexes>
   <properties>
     <entry>
       <key>TableType</key>

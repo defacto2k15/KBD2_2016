@@ -115,6 +115,7 @@
           <typeName>DATE</typeName>
         </dataTypeID>
       </dataTypeUsage>
+      <default class="java.lang.String">SYSDATE</default>
       <notNull>true</notNull>
       <properties>
         <entry>
@@ -172,7 +173,6 @@
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>SCHEMA1</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -206,7 +206,6 @@
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>SCHEMA1</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -240,7 +239,6 @@
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>SCHEMA1</schemaName>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
@@ -259,7 +257,170 @@
         <type>CONSTRAINT</type>
       </referenceID>
     </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">bb1304bd-17d7-45c2-8f6b-230a657490d0</identifier>
+      </ID>
+      <name>MEDICINE_APPLICATIONS_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>WORKER_ID</name>
+          <identifier class="java.lang.String">4154e96f-cc75-4677-a1c9-a5a3d01b62a3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINE_APPLICATIONS</name>
+            <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>PATIENT_ID</name>
+          <identifier class="java.lang.String">ae756e06-6d18-4480-b7d8-02e1f026305c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINE_APPLICATIONS</name>
+            <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>MEDICINE_ID</name>
+          <identifier class="java.lang.String">8c7db646-aca9-4ae0-a24e-4d6203c4b0c3</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINE_APPLICATIONS</name>
+            <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>APPLICATION_DATE</name>
+          <identifier class="java.lang.String">ba41662b-d7df-4de6-b7a9-eb05d3f4a14c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINE_APPLICATIONS</name>
+            <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
   </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">a2158143-48b2-4abd-9aed-c7eb311b0b9e</identifier>
+      </ID>
+      <name>APPLICATIONS_MEDICINE_IDX</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">48aedd9c-58df-48f7-b6ec-97b307ff71ac</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">50eb2eaf-9337-407c-9e8e-8bf8daa6a2dd</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>MEDICINE_ID</name>
+              <identifier class="java.lang.String">8c7db646-aca9-4ae0-a24e-4d6203c4b0c3</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>MEDICINE_APPLICATIONS</name>
+                <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+                <schemaName>SCHEMA1</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+    </indexe>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">ab20caf8-909b-4449-b559-50a594a3d810</identifier>
+      </ID>
+      <name>APPLICATIONS_PATIENT_IDX</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">1912861f-52c7-4a3f-9dcb-691e8e3af751</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">21a8536c-33ce-4a2e-9369-b463f17223ff</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>PATIENT_ID</name>
+              <identifier class="java.lang.String">ae756e06-6d18-4480-b7d8-02e1f026305c</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>MEDICINE_APPLICATIONS</name>
+                <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+                <schemaName>SCHEMA1</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+    </indexe>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">b5219ede-e911-4802-9954-c087370cd742</identifier>
+      </ID>
+      <name>APPLICATIONS_WORKER_IDX</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">f7e66444-ff60-41ec-90a9-1e09b81a038e</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">a1f9031b-9ed3-41ca-a5fb-38497591377d</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>WORKER_ID</name>
+              <identifier class="java.lang.String">4154e96f-cc75-4677-a1c9-a5a3d01b62a3</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>MEDICINE_APPLICATIONS</name>
+                <identifier class="java.lang.String">44e7e88f-e091-47aa-a709-939f98fd8285</identifier>
+                <schemaName>SCHEMA1</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SCHEMA1</name>
+      </schema>
+    </indexe>
+  </indexes>
   <properties>
     <entry>
       <key>TableType</key>

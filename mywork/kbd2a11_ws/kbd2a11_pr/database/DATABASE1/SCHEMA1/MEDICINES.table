@@ -178,7 +178,6 @@
                     <schemaName>SCHEMA1</schemaName>
                     <type>TABLE</type>
                   </parent>
-                  <schemaName>SCHEMA1</schemaName>
                   <type>COLUMN</type>
                 </objectID>
                 <outerJoin>false</outerJoin>
@@ -219,7 +218,46 @@
             <schemaName>SCHEMA1</schemaName>
             <type>TABLE</type>
           </parent>
-          <schemaName>SCHEMA1</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.UniqueConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">fff1f651-0e13-447c-b391-a1ee3de12bb3</identifier>
+      </ID>
+      <name>MEDICINES_SCIENTIFIC_NAME_UK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>SCIENTIFIC_NAME</name>
+          <identifier class="java.lang.String">316dadaf-90ef-47ec-bf76-ce31717840c6</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINES</name>
+            <identifier class="java.lang.String">16895dcb-772d-4d31-bde9-db54d09fd1ba</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.UniqueConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e452ea65-4680-4a4d-befe-aba16929b927</identifier>
+      </ID>
+      <name>MEDICINES_TRADE_NAME_UK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>TRADE_NAME</name>
+          <identifier class="java.lang.String">d2937497-96be-43c8-a002-875c979caf32</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MEDICINES</name>
+            <identifier class="java.lang.String">16895dcb-772d-4d31-bde9-db54d09fd1ba</identifier>
+            <schemaName>SCHEMA1</schemaName>
+            <type>TABLE</type>
+          </parent>
           <type>COLUMN</type>
         </columnID>
       </columnIDs>
